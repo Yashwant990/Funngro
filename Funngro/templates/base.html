@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✅ SEO -->
+  <title>{{ seo.title }}</title>
+  <meta name="description" content="{{ seo.description }}">
+  <meta name="keywords" content="{{ seo.keywords }}">
+  <link rel="canonical" href="{{ seo.canonical }}">
+
+  <!-- ✅ OpenGraph -->
+  <meta property="og:title" content="{{ seo.title }}">
+  <meta property="og:description" content="{{ seo.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ seo.canonical }}">
+
+  <!-- ✅ Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ seo.title }}">
+  <meta name="twitter:description" content="{{ seo.description }}">
+
+  <!-- ✅ CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+  <!-- ✅ NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <span class="logo-icon">📈</span>
+        <span class="logo-text">Funngro</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="{{ url_for('home') }}">Teen</a>
+        <a href="{{ url_for('categories') }}">Categories</a>
+        <a href="#">Company</a>
+        <a href="#">Shelancer</a>
+      </nav>
+
+      <div class="nav-buttons">
+        <a class="btn btn-outline" href="#">Company Login →</a>
+        <a class="btn btn-primary" href="#">Earn Now →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ✅ MAIN CONTENT -->
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- ✅ FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p><strong>Funngro Clone</strong> — Flask + SEO Ready</p>
+      <p>© 2026</p>
+    </div>
+  </footer>
+
+</body>
+</html>

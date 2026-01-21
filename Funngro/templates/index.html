@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-left">
+      <p class="badge">
+        As seen on Shark Tank India — trusted by youth to learn, earn & grow.
+      </p>
+
+      <h1 class="hero-title">TEENLANCERS</h1>
+
+      <p class="hero-subtitle">
+        Real companies, real projects, real earnings and real money.
+      </p>
+
+      <p class="hero-subtitle light">
+        Smart opportunities for the smart generation.
+      </p>
+
+      <div class="cta-row">
+        <a href="{{ url_for('categories') }}" class="btn btn-primary">Explore Categories →</a>
+        <a href="#" class="btn btn-outline">Download App</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <h3>4,000+</h3>
+          <p>Companies</p>
+        </div>
+        <div class="stat-card">
+          <h3>12</h3>
+          <p>Categories</p>
+        </div>
+        <div class="stat-card">
+          <h3>50,00,000+</h3>
+          <p>Teenlancers</p>
+        </div>
+        <div class="stat-card">
+          <h3>1000+</h3>
+          <p>Live Projects</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="phone-mock">
+        <h2 style="margin-bottom:10px;">Start earning today ✅</h2>
+        <p style="line-height:1.6; opacity:0.9;">
+          Work from home, build skills, get verified experience and earn money.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Why work in your teenage?</h2>
+    <p class="section-desc">
+      Build skills early, gain confidence, create a portfolio, and earn your first income by working on real industry tasks.
+    </p>
+
+    <div class="card-grid">
+      <div class="info-card">
+        <h3>💰 First income</h3>
+        <p>Work with real companies and earn money through practical projects.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>🔥 Passion</h3>
+        <p>Turn your interest into skills and start building your future career.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>📚 Learning</h3>
+        <p>Learn by doing with experiential learning and real-world exposure.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>🏅 Certificates</h3>
+        <p>Build your profile with verified projects and experience certificates.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
